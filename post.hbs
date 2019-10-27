@@ -27,10 +27,10 @@ into the {body} of the default.hbs template --}}
 
                 <h1 class="post-full-title">{{title}}</h1>
 
-                {{#if custom_excerpt}}
+  {{!--               {{#if custom_excerpt}}
                 <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
-
+ --}}
                 <div class="post-full-byline">
 
                     <section class="post-full-byline-content">
@@ -84,12 +84,12 @@ into the {body} of the default.hbs template --}}
 
                 </div>
             </header>
-
+{{!-- 
             {{#if feature_image}}
-            <figure class="post-full-image">
+            <figure class="post-full-image"> --}}
                 {{!-- This is a responsive image, it loads different sizes depending on device
                 https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-                <img
+{{!--                 <img
                     srcset="{{img_url feature_image size="s"}} 300w,
                             {{img_url feature_image size="m"}} 600w,
                             {{img_url feature_image size="l"}} 1000w,
@@ -102,7 +102,7 @@ into the {body} of the default.hbs template --}}
                 />
             </figure>
             {{/if}}
-
+ --}}
             <section class="post-full-content">
                 <div class="post-content">
                     {{content}}
